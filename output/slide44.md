@@ -1,8 +1,5 @@
 
-## Restart Your Bot Application
+* Click on your application, and then click **Restart**
 
-We must restart our running bot to pull down and leverage the new container.  
-
-* Login to Marathon at [https://mantlsandbox.cisco.com/marathon/](https://mantlsandbox.cisco.com/marathon/)
-    * Username/Password: admin/1vtG@lw@y
+![](images/sandbox_marathon2.jpg)
 

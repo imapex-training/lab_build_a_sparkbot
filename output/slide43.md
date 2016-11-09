@@ -1,15 +1,5 @@
 
-* Build and Push a new Docker Image
-
-```
-# If you've opened a new terminal sense setting before
-export BOT_REPO=<GITHUB REPO>
-export BOT_NAME=<YOUR BOT NAME>
-export DOCKER_USER=<DOCKER HUB USERNAME>
-
-    
-# Build a Docker image
-docker build -t $DOCKER_USER/$BOT_REPO:latest .
-docker push $DOCKER_USER/$BOT_REPO:latest
-```
+* Find your running Application.  It will be in a folder matching your Docker Username.  
+ 
+![](images/sandbox_marathon1.jpg)
 

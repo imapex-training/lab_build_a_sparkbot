@@ -5,6 +5,7 @@
 * Link for Kevin's Lab on Workstation Setup
 * Prep for possiblity of DevNet Sandbox being down 
 * Update with imapex branding
+* Get some screenshots of Spark during bot testing
 
 [item]: # (slide)
 
@@ -381,8 +382,15 @@ curl http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR 
 
 Have an idea, great!  If you need one...  
 
-* How about Chuck Norris Jokes?
-* Or Cat Facts? 
+### Chuck Norris via API
+
+![Chuck Norris Database](http://icndb.com/wp-content/uploads/2011/01/icndb_logo2.png)
+
+[http://icndb.com](http://icndb.com/)
+
+### Cat Facts Via API
+
+[https://catfacts-api.appspot.com](https://catfacts-api.appspot.com/doc.html)
 
 [item]: # (/slide)
 
@@ -410,24 +418,6 @@ $ tree
 ```
 
 Open this file in your IDE/text-editor
-
-[item]: # (/slide)
-
-[item]: # (slide)
-
-## Chuck Norris via API
-
-![Chuck Norris Database](http://icndb.com/wp-content/uploads/2011/01/icndb_logo2.png)
-
-[http://icndb.com](http://icndb.com/)
-
-[item]: # (/slide)
-
-[item]: # (slide)
-
-## Cat Facts Via API
-
-[https://catfacts-api.appspot.com](https://catfacts-api.appspot.com/doc.html)
 
 [item]: # (/slide)
 

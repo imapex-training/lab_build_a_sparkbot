@@ -1,17 +1,20 @@
 
-## Stub in Code for New Feature
+## Update Bot Logic
 
-Each command has a corresponding function that is called.  Here is the function for the `/echo` command.  
+* Update the `if ...elif` section of the `process_incoming_message` function for your new command.  
 
 ```
-def send_echo(incoming):
-    # Get sent message
-    message = incoming["text"]
-    # Slice first 6 characters to remove command
-    message = message[6:]
-    return message	
+# Some of function removed below
+def process_incoming_message(post_data):
+    # Take action based on command
+    # If no command found, send help
+    if command in ["","/help"]:
+        reply = send_help(post_data)
+    elif command in ["/echo"]:
+        reply = send_echo(message)
+    elif command in ["/chuck"]: 
+        reply = chuck_joke()
+	
+    send_message_to_room(room_id, reply)	
 ```
-
-* Function **must** return the text of the message to be sent
-* Passing the `incoming` data is only required if your command needs it
 

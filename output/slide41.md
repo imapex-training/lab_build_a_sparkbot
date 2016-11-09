@@ -1,20 +1,15 @@
 
-## Update Bot Logic
-
-* Update the `if ...elif` section of the `process_incoming_message` function for your new command.  
+* Build and Push a new Docker Image
 
 ```
-# Some of function removed below
-def process_incoming_message(post_data):
-    # Take action based on command
-    # If no command found, send help
-    if command in ["","/help"]:
-        reply = send_help(post_data)
-    elif command in ["/echo"]:
-        reply = send_echo(message)
-    elif command in ["/chuck"]: 
-        reply = chuck_joke()
-	
-    send_message_to_room(room_id, reply)	
+# If you've opened a new terminal sense setting before
+export BOT_REPO=<GITHUB REPO>
+export BOT_NAME=<YOUR BOT NAME>
+export DOCKER_USER=<DOCKER HUB USERNAME>
+
+    
+# Build a Docker image
+docker build -t $DOCKER_USER/$BOT_REPO:latest .
+docker push $DOCKER_USER/$BOT_REPO:latest
 ```
 

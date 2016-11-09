@@ -1,15 +1,5 @@
 
-## Sample Function
+## Rebuild and Push Your Container
 
-```
-def chuck_joke():
-    # Use urllib to get a random joke
-    import urllib2
-    
-    response = urllib2.urlopen('http://api.icndb.com/jokes/random')
-    joke = json.loads(response.read())["value"]["joke"]
-
-    # Return the text of the joke
-    return joke
-```
+Our bot now has a new ability, but only on our laptop.  Now we must create a new Docker Image.
 
