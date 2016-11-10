@@ -1,7 +1,9 @@
 
-* You will need to have logged into Docker Hub on your workstation for this step.  If you haven't done so, you can by running: 
+###  The script will... 
 
-```
-docker login 
-```
-
+* Download the boilerplate_sparkbot code
+* Create a new local directory for your bot with the boilerplate code
+* Delete the downloaded boilerplate code
+* Create a new GitHub Repo on your account for the bot 
+* Push up the boilerplate code to GitHub
+ 

@@ -1,9 +1,7 @@
 
-# Phase 1: Deploy the Spark Bot
+## Windows Users: Running in Sample Container
 
-1. Create a Bot Account in Spark
-1. Setup bot code repository based on boilerplate
-1. Build and Push initial Docker Image
-1. Deploy your Bot
-1. Test your Bot
+If your workstation is Windows based, you can run the lab exercises from within a Docker container.  
+
+***You could also run within a Linux Virtual Machine that has the required tools installed and working.  If you choose to use that method, you will need to have a VM already available and ready to use.***
 

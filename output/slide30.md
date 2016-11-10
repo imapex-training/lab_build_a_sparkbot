@@ -1,7 +1,7 @@
 
-* Test that your bot is working by executing the `curl` command shown in your output.  If successfully deployed, you will recieve a message in Spark from your bot.   
+* Push the image to Docker Hub
 
 ```
-curl http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR EMAIL ADDRESS>
+docker push $DOCKER_USER/$BOT_REPO:latest
 ```
 

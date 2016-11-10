@@ -1,7 +1,7 @@
 
-* **Bot Username** needs to be unique within Spark, and can **NOT** be changed
+## Lab Phases 
 
-![](images/spark_newbot1.jpg)
+* Deploy the Spark Bot Boilerplate (30 min)
+* Disect the key elements of the Bot (40 min)
+* Add a cool new feature (20 min)
 
-**Sample Bot Image: [http://imapex.io/images/bot-avatar.jpg](http://imapex.io/images/bot-avatar.jpg)**
-	

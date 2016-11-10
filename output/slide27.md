@@ -1,13 +1,5 @@
 
-* Deploy your Bot.  
-    
-```
-# From the root of your project... 
-cd setup_and_install 
-	
-# Run the install script
-./bot_install_sandbox.sh 
-```
-    
-* Answer the questions asked
+## Build and Push Initial Docker Image
+
+Our bot will be packaged and delivered as a Docker Image to provide ease of portability, dependency isolation, and simple updates and refreshes.  
 

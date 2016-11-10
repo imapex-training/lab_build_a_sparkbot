@@ -1,6 +1,15 @@
 
-### Must have installed
-* `git` command line tools - [Install Instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* `docker` daemon (Natively or *Docker for X*) - [Install Instructions](https://www.docker.com/products/overview)
-* An IDE or Text Editor - [PyCharm Community Great Option](https://www.jetbrains.com/pycharm/download/) - **(not Notepad or TextEdit)**
+## Basic Workstation/Laptop Prep
+
+* Lab requires a Mac or Linux Environment
+* Windows users can run the lab within a VM or Container ## ToDo - Add Windows info
+
+### Alternative... 
+
+* The lab works best within a Mac or Linux Environment
+* Options for Windows users 
+    * Run the lab completely from within a Linux VM that has the required tools installed
+    * Run natively as long as the following is met in addition to the standard pre-reqs
+        * Access to a Windows bash shell
+
 

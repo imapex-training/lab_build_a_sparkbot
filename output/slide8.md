@@ -1,7 +1,6 @@
 
-## Lab Phases 
-
-* Deploy the Spark Bot Boilerplate (30 min)
-* Disect the key elements of the Bot (40 min)
-* Add a cool new feature (20 min)
+### Must have installed
+* `git` command line tools - [Install Instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* `docker` daemon (Natively or *Docker for X*) - [Install Instructions](https://www.docker.com/products/overview)
+* An IDE or Text Editor - [PyCharm Community Great Option](https://www.jetbrains.com/pycharm/download/) - **(not Notepad or TextEdit)**
 

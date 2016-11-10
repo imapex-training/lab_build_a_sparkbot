@@ -1,7 +1,5 @@
 
-* Run the `new_bot_setup.sh` script
+## Setup Bot Code Repository
 
-```
-./new_bot_setup.sh
-```
+We will leverage [github.com/imapex/boilerplate_sparkbot](https://github.com/imapex/boilerplate_sparkbot) as a starting point for our bot.  It was created to make it simple to get started with Bots by providing the needed foundation for a functioning bot and allow the developer to focus on new features.  
 

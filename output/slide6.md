@@ -1,6 +1,9 @@
 
-## Basic Workstation/Laptop Prep
+## Docker Hub Account
 
-* Lab requires a Mac or Linux Environment
-* Windows users can run the lab within a VM or Container ## ToDo - Add Windows info
+* [Docker Hub](https://hub.docker.com)
+
+![Docker Hub](images/docker_newaccount.jpg)
+
+**Suggestion: Match your GitHub and Docker Hub Names (including case)**
 

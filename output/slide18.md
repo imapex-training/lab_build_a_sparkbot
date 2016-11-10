@@ -1,9 +1,7 @@
 
-###  The script will... 
+* **Bot Username** needs to be unique within Spark, and can **NOT** be changed
 
-* Download the boilerplate_sparkbot code
-* Create a new local directory for your bot with the boilerplate code
-* Delete the downloaded boilerplate code
-* Create a new GitHub Repo on your account for the bot 
-* Push up the boilerplate code to GitHub
- 
+![](images/spark_newbot1.jpg)
+
+**Sample Bot Image: [http://imapex.io/images/bot-avatar.jpg](http://imapex.io/images/bot-avatar.jpg)**
+	

@@ -1,17 +1,9 @@
 
-* Build the base bot
+### Be Ready to provide... 
 
-```
-# Set a couple environment variables to make commands easier
-# Replace the <NAME> with your data
-export BOT_REPO=<GITHUB REPO>
-export BOT_NAME=<YOUR BOT NAME>
-export DOCKER_USER=<DOCKER HUB USERNAME>
-    
-# If you aren't in your new Git Repository directory, change into it 
-cd $BOT_REPO
-    
-# Build a Docker image
-docker build -t $DOCKER_USER/$BOT_REPO:latest .
-```
+* Your GitHub Credentials
+* A name for your new Spark Bot 
+	* This will be used as the GitHub Repo Name
+	* You'll want to use this same name for the Docker Repository you create later
+	* Use no special characters, begin with a letter
 

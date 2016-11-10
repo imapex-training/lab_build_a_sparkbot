@@ -1,7 +1,8 @@
 
-## Cisco Spark Account
+# Pre-Reqs
 
-* [Cisco Spark](https://web.ciscospark.com)
-
-![Cisco Spark](images/spark_newaccount.jpg)
+* [Cisco Spark Account](http://ciscospark.com)
+* [GitHub Account](https://github.com)
+* [Docker Hub Account](https://hub.docker.com)
+* Basic Workstation/Laptop Prep - **Link to Lab**
 

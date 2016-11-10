@@ -1,9 +1,4 @@
 
-### Be Ready to provide... 
-
-* Your GitHub Credentials
-* A name for your new Spark Bot 
-	* This will be used as the GitHub Repo Name
-	* You'll want to use this same name for the Docker Repository you create later
-	* Use no special characters, begin with a letter
+* Record the *Access token* that is displayed on the next page, and **Save Changes**.  If you do NOT copy the token, you can regenerate it.  
+* Also note the **Bot Username** that is displayed.  This is the ***Bot Email*** that will be needed when setting up your boilerplate code.  
 

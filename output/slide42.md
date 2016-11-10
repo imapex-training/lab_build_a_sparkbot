@@ -1,8 +1,7 @@
 
-## Restart Your Bot Application
+## Spark WebHooks
 
-We must restart our running bot to pull down and leverage the new container.  
+Webhooks allow your app to be notified via HTTP when a specific event occurs on Spark. For example, your app can register a webhook to be notified when a new message is posted into a specific room.  
 
-* Login to Marathon at [https://mantlsandbox.cisco.com/marathon/](https://mantlsandbox.cisco.com/marathon/)
-    * Username/Password: admin/1vtG@lw@y
+![](images/spark_webhooks1.jpg)
 

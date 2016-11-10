@@ -1,17 +1,10 @@
 
-## Stub in Code for New Feature
+# Phase 2: Disect the Bot
 
-Each command has a corresponding function that is called.  Here is the function for the `/echo` command.  
+1. Webhooks
+1. Leveraging Cisco Spark in Code
+1. Building a REST API
+1. Command Processing
+1. Deploying and Running
 
-```
-def send_echo(incoming):
-    # Get sent message
-    message = incoming["text"]
-    # Slice first 6 characters to remove command
-    message = message[6:]
-    return message	
-```
-
-* Function **must** return the text of the message to be sent
-* Passing the `incoming` data is only required if your command needs it
 

@@ -1,10 +1,13 @@
 
-# Phase 2: Disect the Bot
-
-1. Webhooks
-1. Building a REST API
-1. Command Processing
-1. Deploying and Running
-1. Leveraging Cisco Spark in Code
-
+* Deploy your Bot.  
+    
+```
+# From the root of your project... 
+cd setup_and_install 
+	
+# Run the install script
+./bot_install_sandbox.sh 
+```
+    
+* Answer the questions asked
 

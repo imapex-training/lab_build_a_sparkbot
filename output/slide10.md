@@ -1,7 +1,11 @@
 
-## Create Bot Account in Spark
+From your Docker host, run the following command to pull down and enter an interactive shell on the provided development container.
 
-A feature within Cisco Spark, is the ability to create *Bot* apps within an account.  Bots work nearly the same as full accounts with only a few differences.  Check this [page](https://developer.ciscospark.com/bots.html) for details. 
+```
+# It may take some time to complete this command while the full container is downloaded
+docker run -it --name botlab -v /var/run/docker.sock:/var/run/docker.sock hpreston/devbox:latest
 
-* Log into [developer.ciscospark.com](https://developer.ciscospark.com) with your own personal Spark account.  
+[root@cf95a414877e coding]#
+
+```
 

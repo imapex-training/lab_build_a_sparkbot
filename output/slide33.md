@@ -1,8 +1,17 @@
 
-# Phase 3: Add a cool feature!
+* When complete, you should see a message that looks like this
 
-1. Add the command information 
-1. Stub in your code for the feature
-1. Update Bot Logic
-1. Rebuild and Re-Deploy your Bot!
+```
+Your bot is deployed to 
+
+http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/
+    
+You should be able to send a message to yourself from the bot by using this call
+    
+curl http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR EMAIL ADDRESS>
+    
+You can also watch the progress from the GUI at: 
+    
+https://mantlsandbox.cisco.com/marathon
+``` 
 

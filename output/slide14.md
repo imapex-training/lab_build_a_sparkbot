@@ -1,4 +1,9 @@
 
-* Record the *Access token* that is displayed on the next page, and **Save Changes**.  If you do NOT copy the token, you can regenerate it.  
-* Also note the **Bot Username** that is displayed.  This is the ***Bot Email*** that will be needed when setting up your boilerplate code.  
+# Phase 1: Deploy the Spark Bot
+
+1. Create a Bot Account in Spark
+1. Setup bot code repository based on boilerplate
+1. Build and Push initial Docker Image
+1. Deploy your Bot
+1. Test your Bot
 

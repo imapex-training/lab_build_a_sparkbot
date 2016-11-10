@@ -1,5 +1,5 @@
 
-## Rebuild and Push Your Container
+## Notification for Humans
 
-Our bot now has a new ability, but only on our laptop.  Now we must create a new Docker Image.
+![](images/chat_notification_iphone.jpg)
 

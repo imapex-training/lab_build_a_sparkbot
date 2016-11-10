@@ -1,8 +1,6 @@
 
-# Pre-Reqs
+# Build a Spark Bot
 
-* [Cisco Spark Account](http://ciscospark.com)
-* [GitHub Account](https://github.com)
-* [Docker Hub Account](https://hub.docker.com)
-* Basic Workstation/Laptop Prep - **Link to Lab**
+Quickly get started with a functional Spark Bot, disect it's key components, and add cool new features.  
+
 

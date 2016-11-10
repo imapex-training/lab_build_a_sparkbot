@@ -1,9 +1,9 @@
 
-## Docker Hub Account
+## GitHub Account
 
-* [Docker Hub](https://hub.docker.com)
+* [GitHub Account](https://github.com)
 
-![Docker Hub](images/docker_newaccount.jpg)
+![GitHub](images/github_newaccount.jpg)
 
 **Suggestion: Match your GitHub and Docker Hub Names (including case)**
 
