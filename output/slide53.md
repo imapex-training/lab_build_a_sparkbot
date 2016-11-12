@@ -1,13 +1,10 @@
 
-## Reminder: Building and Publishing a Docker image
+## Bot Design Choices
 
-```
-export BOT_REPO=<GITHUB REPO>
-export DOCKER_USER=<DOCKER HUB USERNAME>
+* Package and deliver `bot.py` as a Docker image
+* Publish the Docker image at the public registry [hub.docker.com](http://hub.docker.com)
+* Design `bot.py` to be easily deployed to any Cloud Service supporting Docker applications
+* Leverage Cisco DevNet Express Sandbox as default deployment target.  (Deployed with Marathon/Mesos)  
 
-    
-# Build a Docker image
-docker build -t $DOCKER_USER/$BOT_REPO:latest .
-docker push $DOCKER_USER/$BOT_REPO:latest
-```
+**Details [Mantl Sandbox](https://developer.cisco.com/site/mantl/)**
 

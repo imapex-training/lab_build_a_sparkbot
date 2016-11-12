@@ -1,5 +1,17 @@
 
-## Building a REST API
+## Leveraging Cisco Spark in Code
 
-Webhooks are sent as an HTTP POST.  To receive it, your bot needs to provide a REST API.  Every modern programming language supports the creation of a REST API.  
+Though we could call the REST APIs for Spark directly with Python, [ciscosparkapi](https://github.com/CiscoDevNet/ciscosparkapi) is a "Simple, lightweight, scalable Python API wrapper for the Cisco Spark APIs".  
+
+### Example
+```
+from ciscosparkapi import CiscoSparkAPI
+
+api = CiscoSparkAPI()
+
+message = api.messages.create('<room_id>', text='<message_text>')
+
+print("New message created, with ID:", message.id)
+print(message.text)
+```
 

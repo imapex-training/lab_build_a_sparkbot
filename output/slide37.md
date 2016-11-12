@@ -1,10 +1,5 @@
 
-# Phase 2: Disect the Bot
-
-1. Webhooks
-1. Leveraging Cisco Spark in Code
-1. Building a REST API
-1. Command Processing
-1. Deploying and Running
-
+* Reply back to your bot and verify that the default commands are working.  
+    * `/help` - should return a help message 
+    * `/echo Spark Bots are Awesome!` - should reply back with `Spark Bots are Awesome!`
 

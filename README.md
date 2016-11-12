@@ -3,8 +3,6 @@
 * Windows info
 * Link for Kevin's Lab on Workstation Setup
 * Prep for possiblity of DevNet Sandbox being down 
-* Update with imapex branding
-* Get some screenshots of Spark during bot testing
 
 [item]: # (slide)
 
@@ -431,12 +429,25 @@ curl http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR 
 
 [item]: # (slide)
 
+### Example Message
+![](images/bot_test1.jpg)
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
 * Reply back to your bot and verify that the default commands are working.  
     * `/help` - should return a help message 
     * `/echo Spark Bots are Awesome!` - should reply back with `Spark Bots are Awesome!`
 
 [item]: # (/slide)
 
+[item]: # (slide)
+
+### Example Test Messages
+![](images/bot_test2.jpg)
+
+[item]: # (/slide)
 
 
 
@@ -1037,7 +1048,60 @@ We must restart our running bot to pull down and leverage the new container.
 [item]: # (slide)
 
 * Wait until the new task shows as **Healthy** 
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+* Cloud applications lack *state*.  This means after restarting you need to reconfigure these details.  
+* The Bot application needs the Spark Account information in order to function.  
+* Run this command and provide the bot details
+
+```
+cd setup_and_install
+./bot_config.sh 
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+### Completed Configuration Message
+```
+Checking if Bot is up
+HTTP Status: 200
+
+Bot is up.  Configuring Spark.
+Bot Configuration:
+{"SPARK_BOT_TOKEN": "REDACTED", "SPARKBOT_APP_NAME": "angelbot", "SPARK_BOT_URL": "http://hpreston-angelbot.app.mantldevnetsandbox.com", "SPARK_BOT_EMAIL": "angelbot@sparkbot.io"}
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
 * Test your new command in Spark
+
+### /chuck Examples
+![](images/bot_test3.jpg)
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+## And Done!
+
+**In this lab...**
+
+* You deployed a fully functional Spark Bot
+* Learned the key elements that make it work
+* Added a completely new feature
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+# Go add some more features!
 
 [item]: # (/slide)
 

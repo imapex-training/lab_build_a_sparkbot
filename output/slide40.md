@@ -1,5 +1,5 @@
 
-## Notification for Humans
+## How human's chat
 
-![](images/chat_notification_iphone.jpg)
+![](images/chat_diagram_people.jpg)
 

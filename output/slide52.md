@@ -1,25 +1,7 @@
 
-## Bot Dockerfile
+## Bot Application Facts and Requirements
 
-```
-FROM python:2-alpine
-MAINTAINER Hank Preston <hank.preston@gmail.com>
-EXPOSE 5000
-
-# Install basic utilities
-RUN apk add -U \
-        ca-certificates \
-  && rm -rf /var/cache/apk/* \
-  && pip install --no-cache-dir \
-        setuptools \
-        wheel
-
-COPY requirements.txt /app/
-RUN pip install -r /app/requirements.txt
-
-WORKDIR /app
-ADD ./bot /app/bot
-
-CMD [ "python", "bot/bot.py" ]
-```
+* `bot.py` is a Python Application that must be running for your bot to work
+* `bot.py` must provide it's REST API on the Public Internet for Cisco Spark to send WebHooks 
+* `bot.py` must be updated and restarted each time a new feature is added
 

@@ -1,5 +1,4 @@
 
-## How human's chat
-
-![](images/chat_diagram_people.jpg)
+### Example Test Messages
+![](images/bot_test2.jpg)
 

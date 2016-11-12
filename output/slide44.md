@@ -1,36 +1,7 @@
 
-## bot.py Manages WebHooks Automatically
+## Spark WebHooks
 
-```
-# Function to Setup the WebHook for the bot
-def setup_webhook(name, targeturl):
-    # Get a list of current webhooks
-    webhooks = spark.webhooks.list()
+Webhooks allow your app to be notified via HTTP when a specific event occurs on Spark. For example, your app can register a webhook to be notified when a new message is posted into a specific room.  
 
-    # Look for a Webhook for this bot_name
-    try:
-        for h in webhooks:  # Efficiently iterates through returned objects
-            if h.name == name:
-                sys.stderr.write("Found existing webhook.  Updating it.\n")
-                wh = spark.webhooks.update(webhookId=h.id, 
-                                           name=name, 
-                                           targetUrl=targeturl)
-                # Stop searching
-                break
-        # If there wasn't a Webhook found
-        if wh is None:
-            sys.stderr.write("Creating new webhook.\n")
-            wh = spark.webhooks.create(name=name, 
-                                       targetUrl=targeturl, 
-                                       resource="messages", 
-                                       event="created")
-    except:
-        sys.stderr.write("Creating new webhook.\n")
-        wh = spark.webhooks.create(name=name, 
-                                   targetUrl=targeturl, 
-                                   resource="messages", 
-                                   event="created")
-
-    return wh
-```
+![](images/spark_webhooks1.jpg)
 

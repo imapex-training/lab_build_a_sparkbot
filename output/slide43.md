@@ -1,17 +1,25 @@
 
-## Leveraging Cisco Spark in Code
+## Webhooks - Notifications for Bots
 
-Though we could call the REST APIs for Spark directly with Python, [ciscosparkapi](https://github.com/CiscoDevNet/ciscosparkapi) is a "Simple, lightweight, scalable Python API wrapper for the Cisco Spark APIs".  
-
-### Example
 ```
-from ciscosparkapi import CiscoSparkAPI
+> HTTP POST 
 
-api = CiscoSparkAPI()
-
-message = api.messages.create('<room_id>', text='<message_text>')
-
-print("New message created, with ID:", message.id)
-print(message.text)
+{
+  "appId": "akdjfankasdf8asdf78asdfasdf", 
+  "created": "2016-11-10T02:26:40.770Z", 
+  "data": {
+    "created": "2016-11-10T02:26:50.528Z", 
+    "id": "askdfnaksdflj19198123jaksf", 
+    "personEmail": "ophelia@elsinore.com", 
+    "personId": "a;ldksfnasdfkj981298adskfj", 
+    "roomId": "asdnfkasdf98adsf98afnadfkj1238", 
+    "roomType": "direct"
+  }, 
+  "event": "created", 
+  "id": "askndfkasd98asd9f8adf", 
+  "name": "Calendar Bot", 
+  "resource": "messages", 
+  "targetUrl": "http://calendarbot.elsinore.not/incoming"
+}
 ```
 

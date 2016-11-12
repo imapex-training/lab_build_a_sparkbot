@@ -1,41 +1,13 @@
 
-## Marathon Application Definition for the Bot
-
-`sample_marathon_app_def.json`
+## Reminder: Building and Publishing a Docker image
 
 ```
-{
-    "container": {
-        "type": "DOCKER",
-        "docker": {
-            "image": "DOCKERUSER/DOCKERREPO:latest",
-            "forcePullImage": true,
-            "network": "BRIDGE",
-            "portMappings": [{
-                "containerPort": 5000,
-                "hostPort": 0
-            }]
-        },
-        "forcePullImage": true
-    },
-    "healthChecks": [
-        {
-        "protocol": "TCP",
-        "portIndex": 0
-        },
-        {
-        "path": "/health",
-        "protocol": "HTTP"
-      }
-    ],
-    "id": "/USERNAME/BOTNAME",
-    "instances": 1,
-    "cpus": 0.1,
-    "mem": 16,
-    "env": {
-        "SPARK_BOT_URL": "http://USERNAME-BOTNAME.APPDOMAIN",
-        "SPARK_BOT_APP_NAME": "BOTNAME"
-    }
-}
+export BOT_REPO=<GITHUB REPO>
+export DOCKER_USER=<DOCKER HUB USERNAME>
+
+    
+# Build a Docker image
+docker build -t $DOCKER_USER/$BOT_REPO:latest .
+docker push $DOCKER_USER/$BOT_REPO:latest
 ```
 

@@ -1,5 +1,5 @@
 
-![](http://imapex.io/images/imapex_standing_text_sm.png)
+* Click on your application, and then click **Restart**
 
-### Brought to you by [imapex.io](http://imapex.io)
+![](images/sandbox_marathon2.jpg)
 

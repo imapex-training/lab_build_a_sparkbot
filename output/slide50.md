@@ -1,7 +1,5 @@
 
-## Bot Application Facts and Requirements
+## Command Processing
 
-* `bot.py` is a Python Application that must be running for your bot to work
-* `bot.py` must provide it's REST API on the Public Internet for Cisco Spark to send WebHooks 
-* `bot.py` must be updated and restarted each time a new feature is added
+When the bot is notified of an incoming message via the WebHook, the `process_incoming_message()` function retrieves the message and takes appropriate action.  
 
