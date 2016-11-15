@@ -1,17 +1,9 @@
 
-* Build the base bot
+## Deploy your Bot
 
-```
-# Set a couple environment variables to make commands easier
-# Replace the <NAME> with your data
-export BOT_REPO=<GITHUB REPO>
-export BOT_NAME=<YOUR BOT NAME>
-export DOCKER_USER=<DOCKER HUB USERNAME>
-    
-# If you aren't in your new Git Repository directory, change into it 
-cd $BOT_REPO
-    
-# Build a Docker image
-docker build -t $DOCKER_USER/$BOT_REPO:latest .
-```
+These steps will deploy your bot to the Cisco DevNet Mantl Sandbox.  This is just one option that is freely available to use, however you can deploy your bot to any infrastructure that meets these requirements:
+
+* Able to run a Docker Container
+* Provides a URL for inbound access to running containers from the Internet
+    * *Spark needs to be able to reach it with WebHooks*
 

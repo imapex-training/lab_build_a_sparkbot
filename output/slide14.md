@@ -1,9 +1,7 @@
 
-# Phase 1: Deploy the Spark Bot
+* **Bot Username** needs to be unique within Spark, and can **NOT** be changed
 
-1. Create a Bot Account in Spark
-1. Setup bot code repository based on boilerplate
-1. Build and Push initial Docker Image
-1. Deploy your Bot
-1. Test your Bot
+![](images/spark_newbot1.jpg)
 
+**Sample Bot Image: [http://imapex.io/images/bot-avatar.jpg](http://imapex.io/images/bot-avatar.jpg)**
+	

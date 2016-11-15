@@ -1,10 +1,5 @@
 
-* Cloud applications lack *state*.  This means after restarting you need to reconfigure these details.  
-* The Bot application needs the Spark Account information in order to function.  
-* Run this command and provide the bot details
+* Click on your application, and then click **Restart**
 
-```
-cd setup_and_install
-./bot_config.sh 
-```
+![](images/sandbox_marathon2.jpg)
 

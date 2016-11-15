@@ -1,16 +1,41 @@
 
-## Deploying the Application Definition via API
+## Marathon Application Definition for the Bot
 
-`bot_install_sandbox.sh`
+`sample_marathon_app_def.json`
 
 ```
-# Part of the Install Script
-echo "Installing the Bot as  $docker_username/$bot_name"
-
-curl -k -X POST \
-    -u $mantl_user:$mantl_password \
-    https://$control_address:8080/v2/apps \
-    -H "Content-type: application/json" \
-    -d @$docker_username-$bot_name-sandbox.json
+{
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "DOCKERUSER/DOCKERREPO:latest",
+            "forcePullImage": true,
+            "network": "BRIDGE",
+            "portMappings": [{
+                "containerPort": 5000,
+                "hostPort": 0
+            }]
+        },
+        "forcePullImage": true
+    },
+    "healthChecks": [
+        {
+        "protocol": "TCP",
+        "portIndex": 0
+        },
+        {
+        "path": "/health",
+        "protocol": "HTTP"
+      }
+    ],
+    "id": "/USERNAME/BOTNAME",
+    "instances": 1,
+    "cpus": 0.1,
+    "mem": 16,
+    "env": {
+        "SPARK_BOT_URL": "http://USERNAME-BOTNAME.APPDOMAIN",
+        "SPARK_BOT_APP_NAME": "BOTNAME"
+    }
+}
 ```
 

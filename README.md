@@ -1,7 +1,5 @@
 # ToDo
 
-* Windows info
-* Link for Kevin's Lab on Workstation Setup
 * Prep for possiblity of DevNet Sandbox being down 
 
 [item]: # (slide)
@@ -71,17 +69,8 @@ Quickly get started with a functional Spark Bot, disect it's key components, and
 
 ## Basic Workstation/Laptop Prep
 
-* Lab requires a Mac or Linux Environment
-* Windows users can run the lab within a VM or Container ## ToDo - Add Windows info
-
-### Alternative... 
-
-* The lab works best within a Mac or Linux Environment
-* Options for Windows users 
-    * Run the lab completely from within a Linux VM that has the required tools installed
-    * Run natively as long as the following is met in addition to the standard pre-reqs
-        * Access to a Windows bash shell
-
+* Lab designed for a Mac or Linux Environment
+* Windows user support in *beta* but should work
 
 [item]: # (/slide)
 
@@ -91,84 +80,10 @@ Quickly get started with a functional Spark Bot, disect it's key components, and
 * `git` command line tools - [Install Instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * `docker` daemon (Natively or *Docker for X*) - [Install Instructions](https://www.docker.com/products/overview)
 * An IDE or Text Editor - [PyCharm Community Great Option](https://www.jetbrains.com/pycharm/download/) - **(not Notepad or TextEdit)**
+* **Windows User Additions**
+    * `7-Zip` installed and configured in PATH
 
 [item]: # (/slide)
-
-
-
-
-
-
-
-
-[item]: # (slide)
-
-## Windows Users: Running in Sample Container
-
-If your workstation is Windows based, you can run the lab exercises from within a Docker container.  
-
-***You could also run within a Linux Virtual Machine that has the required tools installed and working.  If you choose to use that method, you will need to have a VM already available and ready to use.***
-
-[item]: # (/slide)
-
-[item]: # (slide)
-
-From your Docker host, run the following command to pull down and enter an interactive shell on the provided development container.
-
-```
-# It may take some time to complete this command while the full container is downloaded
-docker run -it --name botlab -v /var/run/docker.sock:/var/run/docker.sock hpreston/devbox:latest
-
-[root@cf95a414877e coding]#
-
-```
-
-[item]: # (/slide)
-
-[item]: # (slide)
-
-## Container Details 
-
-Linux based working environment with the following utilities and software installed and ready to use.
-
-* nano - Text Editor/IDE for Lab
-* git
-* docker
-
-[item]: # (/slide)
-
-[item]: # (slide)
-
-[item]: # (slide)
-
-## Restarting Stopped Container 
-
-If you exit out of the container before completing the lab and want to continue from where you left off, do not execute a `docker run` command again.  This will create a new clean container that lacks any of your work.  Instead follow the below to start the original container.
-
-```
-# Verify that you have  a container in a stopped state
-docker ps -a
-
-CONTAINER ID        IMAGE                         COMMAND             CREATED             STATUS                        PORTS               NAMES
-cf95a414877e        hpreston/devbox:latest        "/bin/bash"         2 minutes ago       Exited (0) 10 seconds ago                         botlab
-
-# Restart your stopped container
-docker start -i botlab
-
-[root@cf95a414877e coding]#
-```
-
-[item]: # (/slide)
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -271,6 +186,21 @@ chmod +x new_bot_setup.sh
 
 [item]: # (slide)
 
+**Windows Version - Requires 7-Zip to be installed and in PATH**
+	
+```
+# move to the directory where you store code for your projects
+# DO NOT create a folder for your new bot
+cd ~/coding 
+    
+# Download the script 
+Invoke-WebRequest "https://github.com/imapex/boilerplate_sparkbot/raw/master/setup_and_install/new_bot_setup.ps1" -OutFile "new_bot_setup.ps1"
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
 ###  The script will... 
 
 * Download the boilerplate_sparkbot code
@@ -309,6 +239,16 @@ chmod +x new_bot_setup.sh
 
 ```
 ./new_bot_setup.sh
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+**Windows Version**
+
+```
+./new_bot_setup.ps1
 ```
 
 [item]: # (/slide)
@@ -391,6 +331,25 @@ cd setup_and_install
 
 [item]: # (slide)
 
+**Windows Version**
+
+* Deploy your Bot.  
+    
+```
+# From the root of your project... 
+cd setup_and_install 
+	
+# Run the install script
+./bot_install_sandbox.ps1 
+```
+    
+* Answer the questions asked
+
+[item]: # (/slide)
+
+
+[item]: # (slide)
+
 * When complete, you should see a message that looks like this
 
 ```
@@ -411,6 +370,26 @@ https://mantlsandbox.cisco.com/marathon
 
 [item]: # (slide)
 
+**Windows Version**
+    
+```
+Your bot is deployed to 
+
+http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/
+    
+You should be able to send a message to yourself from the bot by using this call
+    
+Invoke-WebRequest http://$docker_username-$bot_name.$mantl_domain/hello/<YOUR EMAIL ADDRESS>
+    
+You can also watch the progress from the GUI at: 
+    
+https://mantlsandbox.cisco.com/marathon
+```   
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
 ## Test your Bot
 
 Your Bot should now be running, let's verify it is up and working.  
@@ -423,6 +402,16 @@ Your Bot should now be running, let's verify it is up and working.
 
 ```
 curl http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR EMAIL ADDRESS>
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+**Windows Version**
+
+```
+Invoke-WebRequest http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR EMAIL ADDRESS>
 ```
 
 [item]: # (/slide)
@@ -836,6 +825,24 @@ curl -k -X POST \
 
 [item]: # (slide)
 
+**Windows Version**
+
+`bot_install_sandbox.ps1`
+
+```
+# Part of the Install Script
+Write-Output "Installing the Bot as  $docker_username/$bot_name"
+Invoke-RestMethod -Method Post \
+  -Uri "https://$control_address`:8080/v2/apps" \
+  -ContentType "application/json" \
+  -InFile "$docker_username-$bot_name-sandbox.json" \
+  -Credential $mantl_credential
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
 ## Verifying Bot Application Installation
 
 * Login to Marathon at [https://mantlsandbox.cisco.com/marathon/](https://mantlsandbox.cisco.com/marathon/)
@@ -1060,6 +1067,17 @@ We must restart our running bot to pull down and leverage the new container.
 ```
 cd setup_and_install
 ./bot_config.sh 
+```
+
+[item]: # (/slide)
+
+[item]: # (slide)
+
+**Windows Version**
+
+```
+cd setup_and_install
+./bot_config.ps1
 ```
 
 [item]: # (/slide)

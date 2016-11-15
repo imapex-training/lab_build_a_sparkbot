@@ -1,17 +1,24 @@
 
-## Stub in Code for New Feature
+## Bot Code File
 
-Each command has a corresponding function that is called.  Here is the function for the `/echo` command.  
+The code for the bot is in the `bot.py` file located in the `bot` directory of the repository.  
 
 ```
-def send_echo(incoming):
-    # Get sent message
-    message = incoming["text"]
-    # Slice first 6 characters to remove command
-    message = message[6:]
-    return message	
+$ tree
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── bot
+│   ├── bot.py
+├── requirements.txt
+└── setup_and_install
+    ├── bot_install_sandbox.sh
+    ├── bot_uninstall_sandbox.sh
+    ├── new_bot_cleanup.sh
+    ├── new_bot_setup.sh
+    └── sample_marathon_app_def.json
 ```
 
-* Function **must** return the text of the message to be sent
-* Passing the `incoming` data is only required if your command needs it
+Open this file in your IDE/text-editor
 

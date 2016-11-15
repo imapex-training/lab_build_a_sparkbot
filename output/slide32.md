@@ -1,13 +1,17 @@
 
-* Deploy your Bot.  
-    
+* When complete, you should see a message that looks like this
+
 ```
-# From the root of your project... 
-cd setup_and_install 
-	
-# Run the install script
-./bot_install_sandbox.sh 
-```
+Your bot is deployed to 
+
+http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/
     
-* Answer the questions asked
+You should be able to send a message to yourself from the bot by using this call
+    
+curl http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR EMAIL ADDRESS>
+    
+You can also watch the progress from the GUI at: 
+    
+https://mantlsandbox.cisco.com/marathon
+``` 
 

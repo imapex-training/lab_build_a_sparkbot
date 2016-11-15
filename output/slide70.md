@@ -1,8 +1,5 @@
 
-## Restart Your Bot Application
+## Rebuild and Push Your Container
 
-We must restart our running bot to pull down and leverage the new container.  
-
-* Login to Marathon at [https://mantlsandbox.cisco.com/marathon/](https://mantlsandbox.cisco.com/marathon/)
-    * Username/Password: admin/1vtG@lw@y
+Our bot now has a new ability, but only on our laptop.  Now we must create a new Docker Image.
 

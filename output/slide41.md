@@ -1,5 +1,5 @@
 
-## Bots... simulating a human in code
+## How human's chat
 
-![](images/chat_diagram_bot.jpg)
+![](images/chat_diagram_people.jpg)
 

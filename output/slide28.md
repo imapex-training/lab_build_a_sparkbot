@@ -1,7 +1,7 @@
 
-* You will need to have logged into Docker Hub on your workstation for this step.  If you haven't done so, you can by running: 
+* Push the image to Docker Hub
 
 ```
-docker login 
+docker push $DOCKER_USER/$BOT_REPO:latest
 ```
 

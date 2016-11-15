@@ -1,24 +1,8 @@
 
-## Bot Code File
+# Phase 3: Add a cool feature!
 
-The code for the bot is in the `bot.py` file located in the `bot` directory of the repository.  
-
-```
-$ tree
-.
-├── Dockerfile
-├── LICENSE
-├── README.md
-├── bot
-│   ├── bot.py
-├── requirements.txt
-└── setup_and_install
-    ├── bot_install_sandbox.sh
-    ├── bot_uninstall_sandbox.sh
-    ├── new_bot_cleanup.sh
-    ├── new_bot_setup.sh
-    └── sample_marathon_app_def.json
-```
-
-Open this file in your IDE/text-editor
+1. Add the command information 
+1. Stub in your code for the feature
+1. Update Bot Logic
+1. Rebuild and Re-Deploy your Bot!
 

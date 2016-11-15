@@ -1,11 +1,9 @@
 
-From your Docker host, run the following command to pull down and enter an interactive shell on the provided development container.
+# Phase 1: Deploy the Spark Bot
 
-```
-# It may take some time to complete this command while the full container is downloaded
-docker run -it --name botlab -v /var/run/docker.sock:/var/run/docker.sock hpreston/devbox:latest
-
-[root@cf95a414877e coding]#
-
-```
+1. Create a Bot Account in Spark
+1. Setup bot code repository based on boilerplate
+1. Build and Push initial Docker Image
+1. Deploy your Bot
+1. Test your Bot
 

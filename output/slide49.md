@@ -1,19 +1,19 @@
 
-## bot.py: Code for the WebHook
+## Flask
+
+The boilerplate code uses the Flask module as the API application.  Flask is a common and easy to use microframework for creating APIs in Python.  
 
 ```
-# Entry point for Spark Webhooks
-@app.route('/', methods=["POST"])
-def process_webhook():
-    # Check if the Spark connection has been made
-    if spark is None:
-        sys.stderr.write("Bot not ready.  \n")
-        return "Spark Bot not ready.  "
+from flask import Flask
+app = Flask(__name__)
 
-    post_data = request.get_json(force=True)
+@app.route("/")
+def hello():
+    return "Hello World!"
 
-    # Take the posted data and send to the processing function
-    process_incoming_message(post_data)
-    return ""
+if __name__ == "__main__":
+    app.run()
 ```
+
+**More Info: [flask.pocoo.org](http://flask.pocoo.org)**
 

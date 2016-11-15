@@ -1,17 +1,7 @@
 
-## Leveraging Cisco Spark in Code
+## Spark WebHooks
 
-Though we could call the REST APIs for Spark directly with Python, [ciscosparkapi](https://github.com/CiscoDevNet/ciscosparkapi) is a "Simple, lightweight, scalable Python API wrapper for the Cisco Spark APIs".  
+Webhooks allow your app to be notified via HTTP when a specific event occurs on Spark. For example, your app can register a webhook to be notified when a new message is posted into a specific room.  
 
-### Example
-```
-from ciscosparkapi import CiscoSparkAPI
-
-api = CiscoSparkAPI()
-
-message = api.messages.create('<room_id>', text='<message_text>')
-
-print("New message created, with ID:", message.id)
-print(message.text)
-```
+![](images/spark_webhooks1.jpg)
 

@@ -1,6 +1,10 @@
 
-* Test your new command in Spark
+* Cloud applications lack *state*.  This means after restarting you need to reconfigure these details.  
+* The Bot application needs the Spark Account information in order to function.  
+* Run this command and provide the bot details
 
-### /chuck Examples
-![](images/bot_test3.jpg)
+```
+cd setup_and_install
+./bot_config.sh 
+```
 

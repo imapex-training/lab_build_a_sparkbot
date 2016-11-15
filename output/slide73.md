@@ -1,3 +1,5 @@
 
-* Wait until the new task shows as **Healthy** 
+* Find your running Application.  It will be in a folder matching your Docker Username.  
+ 
+![](images/sandbox_marathon1.jpg)
 

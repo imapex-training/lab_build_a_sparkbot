@@ -1,8 +1,6 @@
 
-# Phase 3: Add a cool feature!
+## Verifying Bot Application Installation
 
-1. Add the command information 
-1. Stub in your code for the feature
-1. Update Bot Logic
-1. Rebuild and Re-Deploy your Bot!
+* Login to Marathon at [https://mantlsandbox.cisco.com/marathon/](https://mantlsandbox.cisco.com/marathon/)
+    * Username/Password: admin/1vtG@lw@y
 

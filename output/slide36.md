@@ -1,4 +1,7 @@
 
-### Example Message
-![](images/bot_test1.jpg)
+**Windows Version**
+
+```
+Invoke-WebRequest http://<DOCKER USERNAME>-<BOT NAME>.app.mantldevnetsandbox.com/hello/<YOUR EMAIL ADDRESS>
+```
 

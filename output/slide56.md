@@ -1,5 +1,13 @@
 
-## Deploying the Bot Application
+## Reminder: Building and Publishing a Docker image
 
-In a world of "cloud" and "infrastructure as code" applications aren't installed by double clicking **msi** files, or deploying an **OVA**.  Every cloud platform has a format for defining applications that can be easily deployed through API calls.  
+```
+export BOT_REPO=<GITHUB REPO>
+export DOCKER_USER=<DOCKER HUB USERNAME>
+
+    
+# Build a Docker image
+docker build -t $DOCKER_USER/$BOT_REPO:latest .
+docker push $DOCKER_USER/$BOT_REPO:latest
+```
 

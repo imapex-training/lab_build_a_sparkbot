@@ -1,5 +1,9 @@
 
-## Setup Bot Code Repository
+### Be Ready to provide... 
 
-We will leverage [github.com/imapex/boilerplate_sparkbot](https://github.com/imapex/boilerplate_sparkbot) as a starting point for our bot.  It was created to make it simple to get started with Bots by providing the needed foundation for a functioning bot and allow the developer to focus on new features.  
+* Your GitHub Credentials
+* A name for your new Spark Bot 
+	* This will be used as the GitHub Repo Name
+	* You'll want to use this same name for the Docker Repository you create later
+	* Use no special characters, begin with a letter
 

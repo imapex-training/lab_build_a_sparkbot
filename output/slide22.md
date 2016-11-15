@@ -1,15 +1,7 @@
 
-* Download the setup script
+### NOTE regarding GitHub 2 Factor Auth
 
-```
-# move to the directory where you store code for your projects
-# DO NOT create a folder for your new bot
-cd ~/coding 
-
-# Download the script 
-curl -OL https://github.com/imapex/boilerplate_sparkbot/raw/master/setup_and_install/new_bot_setup.sh
-
-# Make the script executable 
-chmod +x new_bot_setup.sh 
-```
+* If you have 2FA enabled on your GitHub account, you will need to provide a *Personal Access Token* when prompted for your password
+* Tokens can be generated at [github.com/settings/tokens](https://github.com/settings/tokens)
+* The token must have a minimum of `repo` access, and `delete_repo` access to automate the creation and cleanup of your new bot
 

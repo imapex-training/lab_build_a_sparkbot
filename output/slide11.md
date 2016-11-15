@@ -1,9 +1,7 @@
 
-## Container Details 
+## Create Bot Account in Spark
 
-Linux based working environment with the following utilities and software installed and ready to use.
+A feature within Cisco Spark, is the ability to create *Bot* apps within an account.  Bots work nearly the same as full accounts with only a few differences.  Check this [page](https://developer.ciscospark.com/bots.html) for details. 
 
-* nano - Text Editor/IDE for Lab
-* git
-* docker
+* Log into [developer.ciscospark.com](https://developer.ciscospark.com) with your own personal Spark account.  
 

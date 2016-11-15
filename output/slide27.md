@@ -1,5 +1,17 @@
 
-## Build and Push Initial Docker Image
+* Build the base bot
 
-Our bot will be packaged and delivered as a Docker Image to provide ease of portability, dependency isolation, and simple updates and refreshes.  
+```
+# Set a couple environment variables to make commands easier
+# Replace the <NAME> with your data
+export BOT_REPO=<GITHUB REPO>
+export BOT_NAME=<YOUR BOT NAME>
+export DOCKER_USER=<DOCKER HUB USERNAME>
+    
+# If you aren't in your new Git Repository directory, change into it 
+cd $BOT_REPO
+    
+# Build a Docker image
+docker build -t $DOCKER_USER/$BOT_REPO:latest .
+```
 

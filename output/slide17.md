@@ -1,5 +1,5 @@
 
-* Create a new **Bot** (do not create a new integration)
+## Setup Bot Code Repository
 
-![](images/spark_newapp1.jpg)
-	
+We will leverage [github.com/imapex/boilerplate_sparkbot](https://github.com/imapex/boilerplate_sparkbot) as a starting point for our bot.  It was created to make it simple to get started with Bots by providing the needed foundation for a functioning bot and allow the developer to focus on new features.  
+

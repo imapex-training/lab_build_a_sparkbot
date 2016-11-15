@@ -1,7 +1,4 @@
 
-## Create Bot Account in Spark
-
-A feature within Cisco Spark, is the ability to create *Bot* apps within an account.  Bots work nearly the same as full accounts with only a few differences.  Check this [page](https://developer.ciscospark.com/bots.html) for details. 
-
-* Log into [developer.ciscospark.com](https://developer.ciscospark.com) with your own personal Spark account.  
+* Record the *Access token* that is displayed on the next page, and **Save Changes**.  If you do NOT copy the token, you can regenerate it.  
+* Also note the **Bot Username** that is displayed.  This is the ***Bot Email*** that will be needed when setting up your boilerplate code.  
 

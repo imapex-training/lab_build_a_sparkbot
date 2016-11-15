@@ -1,9 +1,15 @@
 
-## Deploy your Bot
+**Windows Version**
 
-These steps will deploy your bot to the Cisco DevNet Mantl Sandbox.  This is just one option that is freely available to use, however you can deploy your bot to any infrastructure that meets these requirements:
-
-* Able to run a Docker Container
-* Provides a URL for inbound access to running containers from the Internet
-    * *Spark needs to be able to reach it with WebHooks*
+* Deploy your Bot.  
+    
+```
+# From the root of your project... 
+cd setup_and_install 
+	
+# Run the install script
+./bot_install_sandbox.ps1 
+```
+    
+* Answer the questions asked
 

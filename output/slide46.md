@@ -1,36 +1,17 @@
 
-## bot.py Manages WebHooks Automatically
+## Leveraging Cisco Spark in Code
 
+Though we could call the REST APIs for Spark directly with Python, [ciscosparkapi](https://github.com/CiscoDevNet/ciscosparkapi) is a "Simple, lightweight, scalable Python API wrapper for the Cisco Spark APIs".  
+
+### Example
 ```
-# Function to Setup the WebHook for the bot
-def setup_webhook(name, targeturl):
-    # Get a list of current webhooks
-    webhooks = spark.webhooks.list()
+from ciscosparkapi import CiscoSparkAPI
 
-    # Look for a Webhook for this bot_name
-    try:
-        for h in webhooks:  # Efficiently iterates through returned objects
-            if h.name == name:
-                sys.stderr.write("Found existing webhook.  Updating it.\n")
-                wh = spark.webhooks.update(webhookId=h.id, 
-                                           name=name, 
-                                           targetUrl=targeturl)
-                # Stop searching
-                break
-        # If there wasn't a Webhook found
-        if wh is None:
-            sys.stderr.write("Creating new webhook.\n")
-            wh = spark.webhooks.create(name=name, 
-                                       targetUrl=targeturl, 
-                                       resource="messages", 
-                                       event="created")
-    except:
-        sys.stderr.write("Creating new webhook.\n")
-        wh = spark.webhooks.create(name=name, 
-                                   targetUrl=targeturl, 
-                                   resource="messages", 
-                                   event="created")
+api = CiscoSparkAPI()
 
-    return wh
+message = api.messages.create('<room_id>', text='<message_text>')
+
+print("New message created, with ID:", message.id)
+print(message.text)
 ```
 

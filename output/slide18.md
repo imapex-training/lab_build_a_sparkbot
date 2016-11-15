@@ -1,7 +1,15 @@
 
-* **Bot Username** needs to be unique within Spark, and can **NOT** be changed
+* Download the setup script
 
-![](images/spark_newbot1.jpg)
+```
+# move to the directory where you store code for your projects
+# DO NOT create a folder for your new bot
+cd ~/coding 
 
-**Sample Bot Image: [http://imapex.io/images/bot-avatar.jpg](http://imapex.io/images/bot-avatar.jpg)**
-	
+# Download the script 
+curl -OL https://github.com/imapex/boilerplate_sparkbot/raw/master/setup_and_install/new_bot_setup.sh
+
+# Make the script executable 
+chmod +x new_bot_setup.sh 
+```
+

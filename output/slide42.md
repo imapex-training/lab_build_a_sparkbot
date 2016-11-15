@@ -1,5 +1,5 @@
 
-## Notification for Humans
+## Bots... simulating a human in code
 
-![](images/chat_notification_iphone.jpg)
+![](images/chat_diagram_bot.jpg)
 

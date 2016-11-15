@@ -1,7 +1,5 @@
 
-## Lab Phases 
+* Create a new **Bot** (do not create a new integration)
 
-* Deploy the Spark Bot Boilerplate (30 min)
-* Disect the key elements of the Bot (40 min)
-* Add a cool new feature (20 min)
-
+![](images/spark_newapp1.jpg)
+	

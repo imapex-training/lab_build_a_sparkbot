@@ -1,25 +1,10 @@
 
-## Bot Dockerfile
+## Bot Design Choices
 
-```
-FROM python:2-alpine
-MAINTAINER Hank Preston <hank.preston@gmail.com>
-EXPOSE 5000
+* Package and deliver `bot.py` as a Docker image
+* Publish the Docker image at the public registry [hub.docker.com](http://hub.docker.com)
+* Design `bot.py` to be easily deployed to any Cloud Service supporting Docker applications
+* Leverage Cisco DevNet Express Sandbox as default deployment target.  (Deployed with Marathon/Mesos)  
 
-# Install basic utilities
-RUN apk add -U \
-        ca-certificates \
-  && rm -rf /var/cache/apk/* \
-  && pip install --no-cache-dir \
-        setuptools \
-        wheel
-
-COPY requirements.txt /app/
-RUN pip install -r /app/requirements.txt
-
-WORKDIR /app
-ADD ./bot /app/bot
-
-CMD [ "python", "bot/bot.py" ]
-```
+**Details [Mantl Sandbox](https://developer.cisco.com/site/mantl/)**
 
